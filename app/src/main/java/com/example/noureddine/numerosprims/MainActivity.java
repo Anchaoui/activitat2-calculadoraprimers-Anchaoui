@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     Button bCalcular;
     TextView tRespuesta;
     AlertDialog.Builder dialog;
-    int[] numerosPr=new int[99999];
+    int[] numerosPr=new int[999999];
     int i=0;
     int fin = 0;
     @Override
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 int numero = Integer.parseInt(edNumero.getText().toString());
-                    if(edNumero.getText().length() == 0||numero>99999){
+                    if(edNumero.getText().length() == 0||numero>=numerosPr.length){
                         dialog = new AlertDialog.Builder(MainActivity.this);
                         dialog.setTitle("Error");
                         dialog.setMessage(R.string.Ingressar);
