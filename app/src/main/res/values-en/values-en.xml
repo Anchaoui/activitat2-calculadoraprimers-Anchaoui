@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">M8UF1: Prime numbers</string>
+    <string name="Calcular">Calculate</string>
+    <string name="Posició">Position</string>
+    <string name="explicació">Lets you calculate the nth prime number</string>
+    <string name="resultat">Result</string>
+    <string name="Cerrar" >Close</string>
+    <string name="Ingressar">Enter a maximum number of six digits.</string>
+    <string name="numero_primo"> first name is the </string>
+    <string name="el">He</string>
+</resources>

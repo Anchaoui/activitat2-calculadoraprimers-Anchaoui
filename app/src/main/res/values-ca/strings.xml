@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">M8UF1: NumerosPrims</string>
+    <string name="Calcular">Calcular</string>
+    <string name="Posició">Posició</string>
+    <string name="explicació">Et permet calcular l\'enèsim nombre primer </string>
+    <string name="resultat">Resultat</string>
+    <string name="Cerrar">Tancar</string>
+    <string name="Ingressar" >Introdueixi un nombre màxim de sis dígits.</string>
+    <string name="numero_primo"> nombre primer es el </string>
+    <string name="el">El</string>
+</resources>
