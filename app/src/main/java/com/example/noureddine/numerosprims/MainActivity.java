@@ -45,39 +45,11 @@ public class MainActivity extends AppCompatActivity {
                         });
                         dialog.show();
                     }else{
-
-                        if (numerosPr[1]==0){
-                            numerosPr[0]=1;
-                            numerosPr[1]=2;
-                        }
-                        if (numerosPr[numero-1]==0){
-                            if(numerosPr[2]==0){
-                                i=3;
-                                fin=2;
-                            }
-                            while (fin<numero){
-                                if(isprimer(i)){
-                                    numerosPr[fin]=i;
-                                    fin++;
-                                    System.out.println(fin+" i= "+i);
-
-                                }
-                                    i++;
-                            }
-                        }
-                        tRespuesta.setText(getString(R.string.el)+" "+numero+" "+getString(R.string.numero_primo)+" "+numerosPr[numero-1]);
+                        NumerosPrims numerosPrims=new NumerosPrims(numerosPr.length,numero);
+                        tRespuesta.setText(getString(R.string.el)+" "+numero+" "+getString(R.string.numero_primo)+" "+numerosPrims.getResoltado());
                         edNumero.setEnabled(true);
                     }
                 }
-
-            boolean isprimer(int numero) {
-                for(int i = 2; i < numero; i++){
-                    if(numero % i == 0){
-                        return false;
-                    }
-                }
-                return true;
-            }
         });
     }
 }
